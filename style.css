@@ -1,0 +1,29 @@
+.father {
+  display: flex;
+  /* Default direction */
+  /* flex-direction: column; */
+
+  /* Aligning items in main axis */
+  justify-content: space-between;
+
+  /* Aligning items in cross axis */
+  /* align-items: center; */
+  height: 98vh;
+}
+
+.child {
+  background: peru;
+  width: 200px;
+  height: 200px;
+  color: black;
+}
+
+.child:nth-child(2) {
+  align-self: center;
+  background: cornflowerblue;
+}
+
+.child:nth-child(3) {
+  align-self: flex-end;
+  background: darkolivegreen;
+}
