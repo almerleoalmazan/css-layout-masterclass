@@ -15,15 +15,20 @@
   background: peru;
   width: 200px;
   height: 200px;
-  color: black;
+  color: white;
+  font-size: 2rem;
+}
+
+/*
+ Only align-self and order is permitted
+ in a child within the flex
+*/
+.child:nth-child(1) {
+  align-self: center;
+  order: 2;
 }
 
 .child:nth-child(2) {
-  align-self: center;
-  background: cornflowerblue;
-}
-
-.child:nth-child(3) {
-  align-self: flex-end;
-  background: darkolivegreen;
+  /* align-self: flex-end; */
+  order: 3;
 }
