@@ -2,13 +2,19 @@
   display: flex;
   /* Default direction */
   /* flex-direction: column; */
+  flex-direction: row-reverse;
+  /* flex-direction: column-reverse; */
 
   /* Aligning items in main axis */
-  justify-content: space-between;
+  justify-content: space-around;
+
+  /* Modify the lines in cross axis */
+  align-content: center;
 
   /* Aligning items in cross axis */
   /* align-items: center; */
   height: 100vh;
+  flex-wrap: wrap;
 }
 
 .child {
@@ -16,19 +22,8 @@
   width: 200px;
   height: 200px;
   color: white;
-  font-size: 2rem;
-}
-
-/*
- Only align-self and order is permitted
- in a child within the flex
-*/
-.child:nth-child(1) {
-  align-self: center;
-  order: 2;
-}
-
-.child:nth-child(2) {
-  /* align-self: flex-end; */
-  order: 3;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
